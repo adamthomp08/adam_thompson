@@ -129,18 +129,109 @@ p{
 
     .col{
     	float: left;
-    	width: 100%;
-    	max-width: 470px;
-    	margin-right: 20px;
-    	background-color: #fff;
+	    width: 100%;
+	    max-width: 470px;
+	    margin-right: 20px;
+	    padding: 30px;
+	    background-color: #fff;
+	    box-sizing: border-box;
     }
 
     .last.col{
     	margin-right: 0; 
+    	background-color: transparent;
+    	padding: 0;
     }
 
     .container{
-    	padding: 30px 20px;
+	    padding: 60px 20px 30px;
     }
+
+    .projects,
+    .blogs{
+    	position: relative;
+    	padding: 20px;
+    	min-height: 257px;
+    }
+
+    .projects{
+    	color: #fff;
+    	background-color: $text_black;
+    	margin-bottom: 20px;
+    }
+
+    .projects h4,
+    .blogs h4{
+    	font-size: 1.8em; 
+    	margin: 0;
+    	font-weight: 600;
+    }
+
+    .projects h4 span,
+    .blogs h4 span{
+    	font-weight: 200;
+    }
+
+    .projects h5,
+    .blogs h5{
+    	font-size: 1.2em; 
+    	margin: 0 0 17px;
+	    font-weight: 600;
+    }
+
+    .projects p,
+    .blogs p{
+    	margin: 0 0 10px;
+    	line-height: 1.2;
+    }
+
+    .blogs{
+    	color: $text_black;
+    	background-color: #fff;
+    }
+
+    img{
+	    display: block;
+        margin: -60px auto 20px;
+    }
+
+    h3{
+    	font-size: 2.3em; 
+    	margin: 0 0 10px; 
+    	text-align: center; 
+    }
+    p{
+
+    }
+  	p span {
+	    font-size: 1.6em;
+    	font-weight: 600;
+    	line-height: 1.1;
+	}
+
+	.tags {
+	    margin-bottom: 10px;
+	}
+
+	.drops i {
+		margin-right: 5px; 
+	}
+
+	.drops {
+	    float: left;
+	    position: absolute;
+	    bottom: 20px;    
+	}
+
+	.nav-arrows{
+	    text-align: center;
+	    font-size: 28px;
+	    position: absolute;
+	    right: 20px;
+	    bottom: 20px;
+	}
+	.nav-arrows i{
+		margin-left: 5px;
+	}
 
 }
