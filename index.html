@@ -26,19 +26,38 @@
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #111;
+        background-color: #333;
         overflow-x: hidden;
         transition: 0.5s;
-        padding-top: 60px;
+        padding-top: 0px;
+    }
+
+    .sidenav .image {
+        position: relative;
+        background-image: url(img/sidebar_top.png);
+        height: 200px;
+    }
+
+   .sidenav .image img {
+        position: absolute;
+        top: 55px;
+        left: 125px;
     }
 
     .sidenav a {
-        padding: 8px 8px 8px 32px;
+       padding: 8px 25px;
         text-decoration: none;
-        font-size: 25px;
-        color: #818181;
+        font-size: 1.4em;
+        color: #fff;
+        font-weight: 200;
         display: block;
-        transition: 0.3s
+        transition: 0.3s;
+    }
+
+    .sidenav a i {
+        padding: 0;
+        margin-right: 5px;
+        font-size: 20px;
     }
 
     .sidenav a:hover, .offcanvas a:focus{
@@ -51,6 +70,10 @@
         right: 25px;
         font-size: 36px;
         margin-left: 50px;
+    }
+    .sidenav nav{
+        border-bottom: 1px solid #fff;
+        padding-bottom: 15px;
     }
 
     @media screen and (max-height: 450px) {
@@ -75,13 +98,20 @@
                         <i class="fa fa-bars" aria-hidden="true" onclick="openNav()"></i>
                     </div>                   
             </div>             
-            <nav id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>           
-            </nav> 
+            <section  id="mySidenav" class="sidenav">
+                <div class="image">
+                    <img src="img/profile_temp.png" alt="Adam Thompson Web Designer Photo" width="80px"  />
+                </div>
+                <nav>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                    <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a>
+                    <a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Services</a>
+                    <a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i> Work</a>
+                    <a href="#"><i class="fa fa-globe" aria-hidden="true"></i> Blog</a>
+                    <a href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i> Contact</a>  
+               </nav>          
+            </section> 
         </header>
 
         <section class="banner-wrapper">
@@ -118,7 +148,7 @@
         <section class="homepage-blog clearfix">
             <div class="container clearfix">
                 <div class="col">
-                    <img src="img/profile_temp.png">
+                    <img src="img/profile_temp.png" alt="Adam Thompson Web Designer Photo" />
                     <h3>About</h3>
                     <p><span>Lorem ipsum dolor sit amet, nam alii malorum reprehendunt cushd</span></p>
                     <p>Eu quidam option mel. Ad pri melius iracundia, errem option percipitur eu his, ut omnium oportere mea. Malis quodsi vim id, te atqui pericula eam. Civibus voluptatum consequuntur eum an. Brute sapientem sit ad. Ad nihil iudico veritus pro, pri ei quis dissentiunt.</p>
@@ -214,7 +244,7 @@
 
         <script>
             function openNav() {
-                    document.getElementById("mySidenav").style.width = "250px";
+                    document.getElementById("mySidenav").style.width = "320px";
             }
 
             function closeNav() {
