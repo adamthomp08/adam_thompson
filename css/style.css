@@ -10,7 +10,7 @@ body {
 
 a {
   color: #333333;
-  text-decoration: none; }
+  text-decoration: underline; }
 
 p {
   margin: 0 0 20px; }
@@ -76,10 +76,11 @@ p {
     padding: 10px;
     background-color: #333333;
     border-radius: 4px;
-    min-width: 118px; }
+    min-width: 118px;
+    text-decoration: none; }
 
 .homepage-blog {
-  background-image: url(/img/home_banner.jpg);
+  background-image: url(/img/home_blog.jpg);
   background-size: cover;
   background-position: 50% 50%;
   min-height: 500px; }
@@ -109,7 +110,7 @@ p {
   .homepage-blog .projects h4,
   .homepage-blog .blogs h4 {
     font-size: 1.8em;
-    margin: 0;
+    margin: 0 0 10px;
     font-weight: 600; }
   .homepage-blog .projects h4 span,
   .homepage-blog .blogs h4 span {
@@ -117,7 +118,7 @@ p {
   .homepage-blog .projects h5,
   .homepage-blog .blogs h5 {
     font-size: 1.2em;
-    margin: 0 0 17px;
+    margin: 0 0 5px;
     font-weight: 600; }
   .homepage-blog .projects p,
   .homepage-blog .blogs p {
@@ -150,8 +151,85 @@ p {
     font-size: 28px;
     position: absolute;
     right: 20px;
-    bottom: 20px; }
+    bottom: 10px; }
   .homepage-blog .nav-arrows i {
     margin-left: 5px; }
+
+.form-section {
+  padding: 50px 0px; }
+  .form-section .col {
+    width: 100%;
+    text-align: center; }
+  .form-section h6 {
+    font-size: 2.3em;
+    font-size: 600;
+    margin: 0 0 20px; }
+  .form-section i {
+    margin-right: 10px; }
+  .form-section p {
+    font-size: 1.6em;
+    font-weight: 200; }
+  .form-section .form-50 {
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .form-section .last.form-50 {
+    margin-right: 0; }
+  .form-section .form-50 input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #ededed;
+    border: 0; }
+  .form-section .form-50 input:focus,
+  .form-section .form-100 input:focus,
+  .form-section .form-100 textarea:focus {
+    outline: #333333 auto 5px; }
+  .form-section .form-100 {
+    float: left;
+    width: 100%;
+    margin-bottom: 2%; }
+  .form-section .form-100 textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 10px;
+    border: 0;
+    color: #333333;
+    background-color: #ededed;
+    box-sizing: border-box; }
+  .form-section .form-100 input {
+    display: inline-block;
+    border: 0;
+    background-color: #333333;
+    color: #fff;
+    padding: 10px 50px;
+    border-radius: 4px; }
+
+footer {
+  background-color: #333333;
+  color: #fff; }
+  footer a {
+    color: #fff;
+    text-decoration: none; }
+  footer .container {
+    padding: 30px 20px; }
+  footer .col {
+    float: left;
+    width: 69%;
+    margin-right: 2%; }
+  footer .last.col {
+    width: 29%;
+    margin-right: 0%; }
+  footer i {
+    margin-right: 5px; }
+  footer .last i {
+    font-size: 32px !important; }
+  footer h6 {
+    font-size: 1.6em;
+    margin: 0px 0 10px; }
+  footer p {
+    margin: 0;
+    font-weight: 400; }
 
 /*# sourceMappingURL=style.css.map */

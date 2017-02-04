@@ -15,7 +15,7 @@ body{
 
 a {
 	color: $text_black; 
-	text-decoration: none; 
+	text-decoration: underline; 
 }
 
 p{
@@ -116,13 +116,14 @@ p{
 		background-color: $text_black;
 		border-radius: 4px;
     	min-width: 118px;
+    	text-decoration: none; 
 	}
 
 }
 
 .homepage-blog{
 
-	background-image: url(/img/home_banner.jpg);
+	background-image: url(/img/home_blog.jpg);
     background-size: cover;
     background-position: 50% 50%;
     min-height: 500px;
@@ -163,7 +164,7 @@ p{
     .projects h4,
     .blogs h4{
     	font-size: 1.8em; 
-    	margin: 0;
+	    margin: 0 0 10px;
     	font-weight: 600;
     }
 
@@ -175,7 +176,7 @@ p{
     .projects h5,
     .blogs h5{
     	font-size: 1.2em; 
-    	margin: 0 0 17px;
+    	margin: 0 0 5px;
 	    font-weight: 600;
     }
 
@@ -228,10 +229,131 @@ p{
 	    font-size: 28px;
 	    position: absolute;
 	    right: 20px;
-	    bottom: 20px;
+	    bottom: 10px;
 	}
 	.nav-arrows i{
 		margin-left: 5px;
+	}
+
+}
+
+.form-section{
+
+	padding: 50px 0px;
+	
+	.col{
+		width: 100%;
+		text-align: center; 
+	}
+
+	h6{
+		font-size: 2.3em; 
+		font-size: 600;
+		margin: 0 0 20px; 
+	}
+
+	i{
+		margin-right: 10px; 
+	}
+
+	p{
+	    font-size: 1.6em;
+	    font-weight: 200;
+	}
+
+	.form-50 {
+		width: 49%; 
+		float: left; 
+		margin-right: 2%; 
+		margin-bottom: 2%; 
+	}
+
+	.last.form-50 {
+		margin-right: 0;
+	}
+
+	.form-50 input{
+		width: 100%;
+		padding: 10px; 
+		box-sizing: border-box;
+		background-color: #ededed;
+	    border: 0;
+	}   
+
+	.form-50 input:focus,
+	.form-100 input:focus,
+	.form-100 textarea:focus{
+		outline: $text_black auto 5px;
+	}
+
+	.form-100{
+	    float: left;
+	    width: 100%;
+	    margin-bottom: 2%;
+	}
+
+	.form-100 textarea{
+		width: 100%;
+		min-height: 200px;
+		padding: 10px; 
+		border: 0; 
+		color: $text_black;
+		background-color: #ededed;
+		box-sizing: border-box;
+	}
+
+	.form-100 input{
+		display: inline-block;
+		border: 0; 
+		background-color: $text_black;
+		color: #fff;
+		padding: 10px 50px; 
+	    border-radius: 4px;
+	}
+
+}
+
+footer{
+
+	background-color: $text_black; 
+	color: #fff;
+
+	a{
+		color: #fff; 
+		text-decoration: none; 
+	}
+
+	.container{
+		padding: 30px 20px; 
+	}
+
+	.col{
+		float: left; 
+		width: 69%; 
+		margin-right: 2%; 
+	}
+
+	.last.col{
+		width: 29%; 
+		margin-right: 0%; 
+	}
+
+	i{
+		margin-right: 5px; 
+	}
+
+	.last i {
+		font-size: 32px !important;
+	}
+
+	h6{
+		font-size: 1.6em;
+	    margin: 0px 0 10px;
+	}
+
+	p{
+		margin: 0;
+		font-weight: 400;
 	}
 
 }
