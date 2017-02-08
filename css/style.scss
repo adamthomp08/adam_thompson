@@ -313,6 +313,64 @@ p{
 
 }
 
+.page-intro{
+
+    background-color: $text_black;
+    padding: 50px 0px;
+
+	h1{
+		font-weight: 400;
+		color: #fff;
+	    text-align: center;
+	    font-size: 2.4em;
+	    margin: 0 0 20px; 
+	}
+
+	h1 span{
+		font-weight: 200;
+	} 
+
+	p{
+	    font-size: 1.4em;
+	    text-align: center;
+	    color: #fff;
+	    max-width: 800px;
+	    display: block;
+	    font-weight: 200;
+	    margin: 0 auto;
+	}
+
+}
+
+.services{
+
+	padding: 50px 0; 
+
+	.col{
+		float: left; 
+		max-width: 304px; 
+		width: 100%; 
+	    margin-right: 20px;
+	    text-align: center; 
+	}
+
+	.last.col{
+		margin-right: 0; 
+	}
+
+	h2{
+	    font-size: 1.8em;
+	    line-height: 1.2;
+	    margin: 0 0 10px;
+	}
+
+	i{
+	   	font-size: 50px;
+		margin-bottom: 10px;
+	}
+
+}
+
 footer{
 
 	background-color: $text_black; 
