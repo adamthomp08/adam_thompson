@@ -136,12 +136,18 @@ p{
 	    padding: 30px;
 	    background-color: #fff;
 	    box-sizing: border-box;
+	    box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.1);
+    	-moz-box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.1);
+    	-webkit-box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.1);
     }
 
     .last.col{
     	margin-right: 0; 
     	background-color: transparent;
     	padding: 0;
+    	box-shadow: none; 
+    	-moz-box-shadow: none;
+    	-webkit-box-shadow: none;
     }
 
     .container{
@@ -152,7 +158,10 @@ p{
     .blogs{
     	position: relative;
     	padding: 20px;
-    	min-height: 257px;
+    	min-height: 264px;
+    	box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.1);
+    	-moz-box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.1);
+    	-webkit-box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.1);
     }
 
     .projects{
@@ -316,8 +325,8 @@ p{
 .page-intro{
 
     background-color: $text_black;
-    padding: 50px 0px;
-
+    padding: 30px 0px 0px;
+	
 	h1{
 		font-weight: 400;
 		color: #fff;
@@ -340,18 +349,28 @@ p{
 	    margin: 0 auto;
 	}
 
+	img{
+	    max-width: 400px;
+    	display: block;
+	    margin: 0 auto 15px;
+	}
+
 }
 
 .services{
 
-	padding: 50px 0; 
+	padding: 0px 0 30px;
+	background-color: $text_black;
 
 	.col{
 		float: left; 
-		max-width: 304px; 
+		max-width: 306px;
 		width: 100%; 
-	    margin-right: 20px;
 	    text-align: center; 
+	    background-color: #fff;
+	    padding: 15px;
+	    margin-right: 20px; 
+	    box-sizing: border-box;
 	}
 
 	.last.col{
@@ -359,14 +378,34 @@ p{
 	}
 
 	h2{
-	    font-size: 1.8em;
-	    line-height: 1.2;
+	    font-size: 1.6em;
+	    line-height: 1;
 	    margin: 0 0 10px;
 	}
 
 	i{
 	   	font-size: 50px;
 		margin-bottom: 10px;
+	}
+
+
+}
+
+.body-content{
+
+	padding: 50px 0px; 
+	text-align: center; 
+
+	.col{
+		width: 100%; 
+		box-sizing: border-box; 
+	}
+
+	h3{
+		margin-top: 0px;
+    	font-size: 2.3em;
+    	margin-bottom: 20px;
+    	line-height: 1;
 	}
 
 }

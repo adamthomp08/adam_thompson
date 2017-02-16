@@ -44,10 +44,10 @@
         left: 125px;
     }
 
-    .sidenav a {
+    .sidenav nav a {
        padding: 8px 25px;
         text-decoration: none;
-        font-size: 1.4em;
+        font-size: 1.6em;
         color: #fff;
         font-weight: 200;
         display: block;
@@ -66,16 +66,40 @@
 
     .sidenav .closebtn {
         position: absolute;
-        top: 0;
-        right: 25px;
+        top: 0px;
+        right: 15px;
         font-size: 36px;
-        margin-left: 50px;
+        padding: 0;
     }
     .sidenav nav{
-        border-bottom: 1px solid #fff;
-        padding-bottom: 15px;
+        padding: 65px 0px 15px;
+        text-align: center;
     }
-
+    .side-social {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .side-social a {
+        color: #fff;
+    }
+    .icons a i {
+        font-size: 32px;
+    }
+    .icons {
+        display: block;
+        max-width: 135px;
+        margin: 0 auto 10px;
+    }
+    .contact a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
     @media screen and (max-height: 450px) {
       .sidenav {padding-top: 15px;}
       .sidenav a {font-size: 18px;}
@@ -99,19 +123,29 @@
                     </div>                   
             </div>             
             <section  id="mySidenav" class="sidenav">
-                <div class="image">
-                    <img src="img/profile_temp.png" alt="Adam Thompson Web Designer Photo" width="80px"  />
-                </div>
                 <nav>
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-                    <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a>
-                    <a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Services</a>
-                    <a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i> Work</a>
-                    <a href="#"><i class="fa fa-globe" aria-hidden="true"></i> Blog</a>
-                    <a href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i> Contact</a>  
-               </nav>          
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Work</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>  
+               </nav>  
+               <div class="side-social">
+                    <div class="icons">
+                          <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-linkedin-square" style="margin: 0;" aria-hidden="true"></i></a>
+                    </div>       
+                    <div class="contact">           
+                            <a href="#" style="margin: 0;"><i class="fa fa-phone" aria-hidden="true"></i> 07547871680</a>
+                            <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>hello[at]adamthompson.design</a>
+                    </div>
+                </div>        
             </section> 
+            
         </header>
 
         <section class="banner-wrapper">
