@@ -324,29 +324,40 @@ p{
 
 .page-intro{
 
-    background-color: $text_black;
     padding: 30px 0px 0px;
 	
 	h1{
-		font-weight: 400;
-		color: #fff;
+		font-weight: 200;
+		color: $text_black;
 	    text-align: center;
 	    font-size: 2.4em;
 	    margin: 0 0 20px; 
+	    line-height: 1;
 	}
 
 	h1 span{
-		font-weight: 200;
+		display: block;
+		width: 100%;
+		font-weight: 600;
 	} 
 
 	p{
 	    font-size: 1.4em;
 	    text-align: center;
-	    color: #fff;
+	    color: $text_black;
 	    max-width: 800px;
 	    display: block;
 	    font-weight: 200;
 	    margin: 0 auto;
+	}
+
+	p:after{
+		content: ' ';
+	    display: block;
+	    width: 60px;
+	    height: 1px;
+	    background-color: $text_black;
+	    margin: 30px auto;
 	}
 
 	img{
@@ -359,41 +370,65 @@ p{
 
 .services{
 
-	padding: 0px 0 30px;
+	padding: 60px 0 30px;
 	background-color: $text_black;
+	color: $text_black;
 
 	.col{
+		position: relative;
 		float: left; 
-		max-width: 306px;
 		width: 100%; 
-	    text-align: center; 
 	    background-color: #fff;
-	    padding: 15px;
-	    margin-right: 20px; 
 	    box-sizing: border-box;
 	}
 
-	.last.col{
-		margin-right: 0; 
+	.sub-col{
+		width: 50%;
+		margin-right: 0px;
+		padding: 20px;
+		box-sizing: border-box;
+		min-height: 350px;
+		background-color: #fff;
+	}
+
+	.last.sub-col{
+		position: absolute;
+		margin: 0;
+		background-color: red;
+		width: 50%;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background-image: url('/img/services.jpg');
 	}
 
 	h2{
-	    font-size: 1.6em;
+		display: inline-block; 
+	    font-size: 1.8em;
 	    line-height: 1;
-	    margin: 0 0 10px;
+	     margin: 0 0 30px;
 	}
 
-	i{
-	   	font-size: 50px;
-		margin-bottom: 10px;
+	.col i{
+		display: inline-block; 
+	   	font-size: 46px;
+	   	margin-right: 10px;
+	   	margin-bottom: 30px;
 	}
 
+	.nav{
+		float: left;
+	    width: 100%;
+	    color: #fff;
+	    text-align: center;
+	    margin: 30px 0 0px;
+	}
 
 }
 
 .body-content{
 
-	padding: 50px 0px; 
+	padding: 30px 0px;
 	text-align: center; 
 
 	.col{
