@@ -13,6 +13,7 @@ a {
   text-decoration: underline; }
 
 p {
+  font-weight: 200;
   margin: 0 0 20px; }
 
 .header-wrapper {
@@ -88,6 +89,7 @@ p {
     float: left;
     width: 100%;
     max-width: 470px;
+    min-height: 628px;
     margin-right: 20px;
     padding: 30px;
     background-color: #fff;
@@ -120,7 +122,7 @@ p {
   .homepage-blog .blogs h4 {
     font-size: 1.8em;
     margin: 0 0 10px;
-    font-weight: 600; }
+    font-weight: 400; }
   .homepage-blog .projects h4 span,
   .homepage-blog .blogs h4 span {
     font-weight: 200; }
@@ -215,20 +217,20 @@ p {
     padding: 10px 50px;
     border-radius: 4px; }
 
-.page-intro {
+.page-intro, .page-intro-1 {
   padding: 30px 0px 0px; }
-  .page-intro h1 {
+  .page-intro h1, .page-intro-1 h1 {
     font-weight: 200;
     color: #333333;
     text-align: center;
     font-size: 2.4em;
     margin: 0 0 20px;
     line-height: 1; }
-  .page-intro h1 span {
+  .page-intro h1 span, .page-intro-1 h1 span {
     display: block;
     width: 100%;
     font-weight: 600; }
-  .page-intro p {
+  .page-intro p, .page-intro-1 p {
     font-size: 1.4em;
     text-align: center;
     color: #333333;
@@ -236,36 +238,76 @@ p {
     display: block;
     font-weight: 200;
     margin: 0 auto; }
-  .page-intro p:after {
+  .page-intro p:after, .page-intro-1 p:after {
     content: ' ';
     display: block;
     width: 60px;
     height: 1px;
     background-color: #333333;
-    margin: 30px auto; }
-  .page-intro img {
+    margin: 40px auto 10px; }
+  .page-intro img, .page-intro-1 img {
     max-width: 400px;
     display: block;
     margin: 0 auto 15px; }
 
-.services {
+.page-intro-1 {
+  background-image: url(/img/web_development-1.jpg); }
+  .page-intro-1 h1, .page-intro-1 p {
+    color: #fff; }
+
+.services, .services-1 {
+  padding: 30px 0;
+  color: #333333; }
+  .services .col, .services-1 .col {
+    float: left;
+    width: 100%;
+    max-width: 304px;
+    margin-right: 20px; }
+  .services .last.col, .services-1 .last.col {
+    margin-right: 0; }
+  .services h2, .services-1 h2 {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 1.8em;
+    line-height: 1;
+    margin: 0 0 20px; }
+  .services .col i, .services-1 .col i {
+    display: inline-block;
+    font-size: 32px;
+    margin-right: 10px;
+    margin-bottom: 20px; }
+  .services .nav, .services-1 .nav {
+    float: left;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    margin: 30px 0 0px; }
+  .services img, .services-1 img {
+    max-width: 100%; }
+
+.services-1 {
+  padding: 50px 0; }
+
+.services-slide, .services-slide-1 {
   padding: 60px 0 30px;
   background-color: #333333;
-  color: #333333; }
-  .services .col {
+  color: #333333;
+  background-image: url(/img/web_development.jpg);
+  background-size: cover; }
+  .services-slide .col, .services-slide-1 .col {
     position: relative;
     float: left;
     width: 100%;
     background-color: #fff;
     box-sizing: border-box; }
-  .services .sub-col {
+  .services-slide .sub-col, .services-slide-1 .sub-col {
     width: 50%;
     margin-right: 0px;
     padding: 20px;
     box-sizing: border-box;
-    min-height: 350px;
+    min-height: 450px;
     background-color: #fff; }
-  .services .last.sub-col {
+  .services-slide .last.sub-col, .services-slide-1 .last.sub-col {
     position: absolute;
     margin: 0;
     background-color: red;
@@ -274,22 +316,25 @@ p {
     right: 0;
     bottom: 0;
     background-image: url("/img/services.jpg"); }
-  .services h2 {
+  .services-slide h2, .services-slide-1 h2 {
     display: inline-block;
     font-size: 1.8em;
     line-height: 1;
     margin: 0 0 30px; }
-  .services .col i {
+  .services-slide .col i, .services-slide-1 .col i {
     display: inline-block;
     font-size: 46px;
     margin-right: 10px;
     margin-bottom: 30px; }
-  .services .nav {
+  .services-slide .nav, .services-slide-1 .nav {
     float: left;
     width: 100%;
     color: #fff;
     text-align: center;
     margin: 30px 0 0px; }
+
+.services-slide-1 {
+  background-image: none; }
 
 .body-content {
   padding: 30px 0px;

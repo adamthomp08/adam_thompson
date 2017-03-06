@@ -19,6 +19,7 @@ a {
 }
 
 p{
+	font-weight: 200;
 	margin: 0 0 20px;
 }
 
@@ -132,6 +133,7 @@ p{
     	float: left;
 	    width: 100%;
 	    max-width: 470px;
+	    min-height: 628px;
 	    margin-right: 20px;
 	    padding: 30px;
 	    background-color: #fff;
@@ -174,7 +176,7 @@ p{
     .blogs h4{
     	font-size: 1.8em; 
 	    margin: 0 0 10px;
-    	font-weight: 600;
+    	font-weight: 400;
     }
 
     .projects h4 span,
@@ -322,7 +324,7 @@ p{
 
 }
 
-.page-intro{
+.page-intro, .page-intro-1{
 
     padding: 30px 0px 0px;
 	
@@ -357,7 +359,7 @@ p{
 	    width: 60px;
 	    height: 1px;
 	    background-color: $text_black;
-	    margin: 30px auto;
+	    margin: 40px auto 10px;
 	}
 
 	img{
@@ -368,11 +370,73 @@ p{
 
 }
 
-.services{
+.page-intro-1{
+
+	background-image: url(/img/web_development-1.jpg);
+
+	h1, p{
+		color: #fff;
+	}
+
+}
+
+
+.services, .services-1{
+
+	padding: 30px 0;
+	color: $text_black;
+
+	.col{
+		float: left; 
+		width: 100%;
+		max-width: 304px;
+		margin-right: 20px;  
+ 	}
+
+ 	.last.col{
+ 		margin-right: 0; 
+ 	} 	 
+
+	h2{
+		display: inline-block; 
+		font-weight: 900;
+	    font-size: 1.8em;
+	    line-height: 1;
+	     margin: 0 0 20px;
+	}
+
+	.col i{
+		display: inline-block; 
+	   	font-size: 32px;
+	   	margin-right: 10px;
+	   	margin-bottom: 20px;
+	}
+
+	.nav{
+		float: left;
+	    width: 100%;
+	    color: #fff;
+	    text-align: center;
+	    margin: 30px 0 0px;
+	}
+
+	img {
+	    max-width: 100%;
+	}
+
+}
+
+.services-1{
+	padding: 50px 0;
+}
+
+.services-slide, .services-slide-1{
 
 	padding: 60px 0 30px;
-	background-color: $text_black;
-	color: $text_black;
+    background-color: #333333;
+    color: #333333;
+    background-image: url(/img/web_development.jpg);
+    background-size: cover;
 
 	.col{
 		position: relative;
@@ -384,11 +448,11 @@ p{
 
 	.sub-col{
 		width: 50%;
-		margin-right: 0px;
-		padding: 20px;
-		box-sizing: border-box;
-		min-height: 350px;
-		background-color: #fff;
+   		margin-right: 0px;
+    	padding: 20px;
+   		box-sizing: border-box;
+    	min-height: 450px;
+    	background-color: #fff;
 	}
 
 	.last.sub-col{
@@ -424,6 +488,10 @@ p{
 	    margin: 30px 0 0px;
 	}
 
+}
+
+.services-slide-1{
+	background-image: none; 
 }
 
 .body-content{
